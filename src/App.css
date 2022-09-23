@@ -1,21 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ }
+
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.title {
+  width: 80%;
+  height: 10px;
+  margin: 0;
+  text-align: left;
+ }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #0040ee;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +30,73 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Tabs {
+  width: 80%;
+  height: 80%;
+  background: #245863;
+  margin: 3.5rem auto 1.5rem;
+  padding: 2rem 1rem;
+  color: #E8F0F2;
+  border-radius: 2rem;
+  @media (max-width: 769px) {
+    padding: 2rem 0;
+  }
+ }
+
+ ul.nav {
+  width: 60%;
+  max-width: 300px;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #39A2DB;
+  border-radius: 2rem;
+  padding-left: 0px;
+  text-size-adjust: auto;
+  
+  @media (max-width: ) {
+    
+  }
+}
+ul.nav li {
+  width: 50%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+  font-size: 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* tab item css */
+ul.nav li:nth-child(1) {
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
 }
+ul.nav li:nth-child(2) li:nth-child(3) {
+  border-radius: 0;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+ul.nav li:nth-child(4) {
+  border-radius: 0;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.5rem;
+}
+ul.nav li:hover {
+  background: rgba(50, 224, 196, 0.15);
+}
+ul.nav li.active {
+  background: #39A2DB;
+}
+
+.Main p, .Course p, .About p, .Project p   {
+  font-size: 2rem;
+  text-align: center;
+}
+

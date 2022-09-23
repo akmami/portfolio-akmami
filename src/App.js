@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState,useEffect} from 'react'
+import axios from 'axios'
+import Tabs from './components/tabs';
+
 
 function App() {
+  
+  //creating IP state
+  const [ip, setIP] = useState('');
+
+  //creating function to load ip address from the API
+  const getData = async () => {
+    console.log("IP request is initiated.")
+    const res = await axios.get('https://geolocation-db.com/json/')
+    console.log(res.data);
+    setIP(res.data.IPv4)
+  }
+  
+  useEffect( () => {
+    getData()
+  }, [])
+
   return (
     <div className="App">
+      
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2 className="title" >Akmuhammet Ashyralyyev</h2>
+        <Tabs />
       </header>
+      
     </div>
   );
 }
