@@ -5,11 +5,11 @@
  }
 
 .App {
-  width: 100vw;
-  height: 100vh;
+  min-width: 850px;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .title {
@@ -17,11 +17,12 @@
   height: 10px;
   margin: 0;
   text-align: left;
+  color: #ffffff;
  }
 
 .App-header {
-  background-color: #0040ee;
-  height: 100vh;
+  background-color: #245863;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,18 +33,18 @@
 
 .Tabs {
   width: 80%;
-  height: 80%;
-  background: #245863;
+  min-height: 80vh;
+  background: #ffffff;
   margin: 3.5rem auto 1.5rem;
   padding: 2rem 1rem;
-  color: #E8F0F2;
+  color: #245863;
   border-radius: 2rem;
   @media (max-width: 769px) {
     padding: 2rem 0;
   }
  }
-
- ul.nav {
+/*  Tab controller */
+ul.nav {
   width: 60%;
   max-width: 300px;
   margin: 0 auto 2rem;
@@ -53,10 +54,6 @@
   border-radius: 2rem;
   padding-left: 0px;
   text-size-adjust: auto;
-  
-  @media (max-width: ) {
-    
-  }
 }
 ul.nav li {
   width: 50%;
@@ -89,7 +86,7 @@ ul.nav li:nth-child(4) {
   padding-right: 0.5rem;
 }
 ul.nav li:hover {
-  background: rgba(50, 224, 196, 0.15);
+  background: rgba(1, 14, 12, 0.15);
 }
 ul.nav li.active {
   background: #39A2DB;
@@ -100,3 +97,47 @@ ul.nav li.active {
   text-align: center;
 }
 
+/* Main content */
+.outlet {
+  height: 90%;
+  width: 100%;
+}
+
+/* Welcome page */
+.welcome {
+  min-height: 60vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.image{
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 70%;
+  max-height: 100%;
+}
+div.center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 5%;
+}
+.hi {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.about {
+  text-decoration: underline;
+  font-style: italic;
+  cursor: pointer;
+}
+.about:hover {
+  background: rgba(50, 224, 196, 0.15);
+}
+.more {
+  font-size: 0.6rem;
+}

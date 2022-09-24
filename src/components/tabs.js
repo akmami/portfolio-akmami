@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Course from "./all-tabs/course";
+import Courses from "./all-tabs/courses";
 import About from "./all-tabs/about";
 import Welcome from "./all-tabs/welcome";
-import Project from "./all-tabs/project";
+import Projects from "./all-tabs/projects";
 
 const Tabs = () => {
 
@@ -13,6 +13,7 @@ const Tabs = () => {
         setActiveTab('welcome')
     }
     const handleAbout = () => {
+        console.log("navigating to About");
         setActiveTab('about')
     }
     const handleCourse = () => {
@@ -25,13 +26,13 @@ const Tabs = () => {
     const getTab = () => {
         switch(activeTab) {
             case 'welcome':
-                return (<Welcome />);
+                return (<Welcome handleAbout={handleAbout}/>);
             case 'about':
                     return (<About />);
             case 'course':
-                return (<Course />);
+                return (<Courses />);
             case 'project':
-                return (<Project />);
+                return (<Projects />);
             default:
                 return (<Welcome />);
         }
@@ -39,7 +40,6 @@ const Tabs = () => {
 
     return (
         <div className="Tabs">
-            
             <ul className="nav">
                 <li className={activeTab === 'welcome' ? "active" : ""} onClick={ handleWelcome }>Welcome</li>
                 <li className={activeTab === 'about' ? "active" : ""} onClick={ handleAbout }>About</li>
