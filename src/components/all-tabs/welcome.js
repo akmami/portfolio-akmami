@@ -6,6 +6,18 @@ function Welcome(props) {
         props.handleAbout();
     }
 
+    const handleLinkedIn = () => {
+        window.open('https://www.linkedin.com/in/akmami/', '_blank', 'noopener,noreferrer');
+    }
+
+    const handleGitHub = () => {
+        window.open('https://github.com/akmami/', '_blank', 'noopener,noreferrer');
+    }
+    
+    const handleLeetCode = () => {
+        window.open('https://leetcode.com/akmami/', '_blank', 'noopener,noreferrer');
+    }
+
     return (
         <div className="welcome">
             <img className="image" src={require('../../assets/akmuhammet.jpg')} alt='' />
@@ -23,6 +35,24 @@ function Welcome(props) {
                 <label className="more"> page</label>
                 <br/>
             </div>
+                <div className="contact">
+                    <img className="contactImage" src={require('../../assets/linkedin.png')} alt='' />
+                    <label> : </label>
+                    <label className="clickable" onClick={handleLinkedIn}>akmami</label>
+                    <label> </label>
+                   
+                    <img className="contactImage" src={require('../../assets/github.png')} alt='' />
+                    <label> : </label>
+                    <label className="clickable" onClick={handleGitHub}>akmami</label>
+                    <label> </label>
+
+                    <img className="contactImage" src={require('../../assets/leetcode.png')} alt='' />
+                    <label> : </label>
+                    <label className="clickable" onClick={handleLeetCode}>akmami</label> <br/>
+
+                    <label className="email">Email: </label> 
+                    <label className="clickable" >akmuhammet99@gmail.com</label> <br/>
+                </div>
         </div>
     )
 }

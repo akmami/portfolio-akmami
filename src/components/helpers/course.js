@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Link } from "react";
+import React, { useState } from "react";
 
 function Course(props) {
 
@@ -9,23 +9,22 @@ function Course(props) {
     };
 
     return (
-            course ? (
-                <div>
-                    <label style={styles.title}>{course.title}</label> <br/>
-                    <label style={styles.course}>Organization: {course.organization}</label> <br/>
-                    <label style={styles.course}>Issued: {course.issue}</label> <br/>
-                    <label style={styles.course}>Credential: </label>
-                    <label style={styles.click}
-                        onClick={() => openInNewTab(course.credential)}>click to see</label>
-                    <br/>
-                    <label style={styles.course}>Learnt & Used: {course.learnt}</label> <br/>
-                </div>
-            ) : (
-                <div>
-                    <label>Error</label> <br/>
-                </div>
-                
-            )
+        course ? (
+            <div>
+                <label style={styles.title}>{course.title}</label> <br/>
+                <label style={styles.course}>Organization: {course.organization}</label> <br/>
+                <label style={styles.course}>Issued: {course.issue}</label> <br/>
+                <label style={styles.course}>Credential: </label>
+                <label style={styles.click}
+                    onClick={() => openInNewTab(course.credential)}>click to see</label>
+                <br/>
+                <label style={styles.course}>Learnt & Used: {course.learnt}</label> <br/>
+            </div>
+        ) : (
+            <div>
+                <label>Error</label> <br/>
+            </div>
+        )
     )
 }
 

@@ -1,4 +1,4 @@
-const courses = {
+const online_courses = {
     Bioinformatics: [
         {
             id: 1,
@@ -27,7 +27,7 @@ const courses = {
             learnt: 'Bash Shell Scripting',
         }
     ],
-    CyberSecurity: [
+    'Cyber Security': [
         {
             id: 5,
             title: 'The Complete Cyber Security Course : Anonymous Browsing! V3',
@@ -91,4 +91,4 @@ const courses = {
     ]
 };
 
-export default courses;
+export default online_courses;
