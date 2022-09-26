@@ -77,10 +77,11 @@ export default Project;
 
 let styles = {
     title: {
-        fontSize: '0.85em'
+        fontSize: '24px',
+        fontWeight: 'bold'
     },
     project: {
-        fontSize: '0.7em'
+        fontSize: '16px'
     },
     p: {
         marginLeft: '2em'
@@ -89,7 +90,7 @@ let styles = {
         textDecoration: 'underline',
         fontStyle: 'italic',
         cursor: 'pointer',
-        fontSize: '0.7em',
+        fontSize: '16px',
         whiteSpace: 'nowrap' 
     }
 }

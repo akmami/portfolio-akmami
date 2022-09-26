@@ -63,7 +63,7 @@ ul.nav li {
   text-align: center;
   cursor: pointer;
   transition: all 0.7s;
-  font-size: 0.5em;
+  font-size: 12px;
 }
 
 /* tab item css */
@@ -90,11 +90,6 @@ ul.nav li:hover {
 }
 ul.nav li.active {
   background: #39A2DB;
-}
-
-.Main p, .Course p, .About p, .Project p   {
-  font-size: 2rem;
-  text-align: center;
 }
 
 /* Main content */
@@ -127,7 +122,7 @@ div.center {
   left: 5%;
 }
 .hi {
-  font-size: 1.2em;
+  font-size: 28px;
   font-weight: bold;
 }
 .about {
@@ -139,7 +134,7 @@ div.center {
   background: rgba(50, 224, 196, 0.15);
 }
 .more {
-  font-size: 0.6rem;
+  font-size: 12px;
 }
 
 .contact {
@@ -147,10 +142,10 @@ div.center {
   position: absolute;
   top: 80%;
   left: 5%;
-  font-size: 0.6rem;
+  font-size: 12px;
 }
 .clickable {
-  font-size: 0.6rem;
+  font-size: 12px;
   text-decoration: underline;
   font-style: italic;
 }

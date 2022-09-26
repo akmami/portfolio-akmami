@@ -57,16 +57,17 @@ export default Experience;
 
 let styles = {
     title: {
-        fontSize: '0.85em'
+        fontSize: '24px',
+        fontWeight: 'bold'
     },
     experience: {
-        fontSize: '0.7em'
+        fontSize: '16px'
     },
     click: {
         textDecoration: 'underline',
         fontStyle: 'italic',
         cursor: 'pointer',
-        fontSize: '0.7em',
+        fontSize: '16px',
         whiteSpace: 'nowrap' 
     }
 }

@@ -14,7 +14,7 @@ function Experiences() {
                 experiences.map( (experience, index) => {
                     return (
                         <React.Fragment key={experience.id}>
-                            <Experience style={styles.experience} experience={experience} /> <br/>
+                            <Experience experience={experience} /> <br/>
                         </React.Fragment>
                     );
                 })
@@ -28,7 +28,7 @@ export default Experiences;
 let styles = {
     header: {
         width: '100%',
-        fontSize: '1.2em',
+        fontSize: '28px',
         textAlign: 'center',
     },
     div: {
@@ -37,8 +37,5 @@ let styles = {
         overflow: 'hidden',
         position: 'relative',
         textAlign: 'center',
-    },
-    experience: {
-        textAlign: 'left',
     }
 }

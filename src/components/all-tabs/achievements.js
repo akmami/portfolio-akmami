@@ -27,7 +27,7 @@ export default Achievements;
 let styles = {
     header: {
         width: '100%',
-        fontSize: '1.2em',
+        fontSize: '28px',
         textAlign: 'center',
     },
     div: {

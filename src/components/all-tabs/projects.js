@@ -37,7 +37,7 @@ export default Projects;
 let styles = {
     header: {
         width: '100%',
-        fontSize: '1.2em',
+        fontSize: '28px',
         textAlign: 'center',
     },
     div: {
@@ -49,8 +49,7 @@ let styles = {
     },
     project: {
         textAlign: 'left',
-    },
-    type: {
-        fontSize: '1.1em'
+        fontSize: '24px',
+        fontWeight: 'bold'
     }
 }

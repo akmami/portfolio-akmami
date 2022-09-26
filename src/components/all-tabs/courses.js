@@ -37,7 +37,7 @@ export default Courses;
 let styles = {
     header: {
         width: '100%',
-        fontSize: '1.2em',
+        fontSize: '28px',
         textAlign: 'center',
     },
     div: {
@@ -49,5 +49,7 @@ let styles = {
     },
     course: {
         textAlign: 'left',
+        fontSize: '24px',
+        fontWeight: 'bold',
     }
 }

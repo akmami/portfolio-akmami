@@ -51,16 +51,17 @@ export default Achievement;
 
 let styles = {
     title: {
-        fontSize: '0.85em'
+        fontSize: '20px',
+        fontWeight: 'bold'
     },
     achievement: {
-        fontSize: '0.7em'
+        fontSize: '16px'
     },
     click: {
         textDecoration: 'underline',
         fontStyle: 'italic',
         cursor: 'pointer',
-        fontSize: '0.7em',
+        fontSize: '16px',
         whiteSpace: 'nowrap' 
     }
 }

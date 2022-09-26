@@ -32,7 +32,7 @@ export default About;
 let styles = {
     header: {
         width: '100%',
-        fontSize: '1.2em',
+        fontSize: '28px',
         textAlign: 'center',
     },
     div: {
@@ -45,6 +45,6 @@ let styles = {
     p: {
         marginLeft: '2em',
         marginRight: '2em',
-        fontSize: '0.8em'
+        fontSize: '16px'
     }
 }
