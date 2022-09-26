@@ -8,7 +8,11 @@ const about = [
     Apart from learning, I have tried to put that knowledge into practice. Specifically on courses' projects. The examples can be found on my GitHub repos.
     I have also got a chance to have a job experience which 2 of them are internship.`,
     `Lastly, I like travelling, feasting :) and watching movies/series. On the other hand, I am really rigorous (mostly in all aspects of my life). 
-    Sometimes it's a blessing and sometimes its curse :'). But I always find a way to transfer it into something to obtain good results.`
+    Sometimes it's a blessing and sometimes its curse :'). But I always find a way to transfer it into something to obtain good results.`,
+    `Strong: Swift, Python (+Django), Java (+Spring Framework), git, MySQL + OOP`,
+    `Middle: C++, JavaScript (React), Heroku`,
+    `Limited: RabbitMQ`,
+    `Interests: Mobile App Development, Backend, Algorithms, Finance, Bioinformatics, Cyber Security`
 ]
 
 export default about;

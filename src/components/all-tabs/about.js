@@ -45,6 +45,6 @@ let styles = {
     p: {
         marginLeft: '2em',
         marginRight: '2em',
-        fontSize: '24px'
+        fontSize: '0.8em'
     }
 }
