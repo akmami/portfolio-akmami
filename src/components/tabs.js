@@ -11,11 +11,9 @@ const Tabs = () => {
     const [activeTab, setActiveTab] = useState('welcome');
 
     const handleWelcome = () => {
-        console.log("Welcome tab is clicked.")
         setActiveTab('welcome')
     }
     const handleAbout = () => {
-        console.log("navigating to About");
         setActiveTab('about')
     }
     const handleCourse = () => {
