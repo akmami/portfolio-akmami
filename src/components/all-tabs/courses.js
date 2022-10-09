@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Course from '../helpers/course';
-import online_courses from '../../data/courses';
+import online_courses from '../../data/online_courses';
 
 function Courses() {
 
