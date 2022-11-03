@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7bf4c3d5.css",
+    "main.js": "/static/js/main.e205decd.js",
+    "static/media/akmuhammet.jpg": "/static/media/akmuhammet.81140bc337283eaced30.jpg",
+    "static/media/leetcode.png": "/static/media/leetcode.780cda6abfbd78f044ee.png",
+    "static/media/github.png": "/static/media/github.259ed9748eed6c6bf345.png",
+    "index.html": "/index.html",
+    "main.7bf4c3d5.css.map": "/static/css/main.7bf4c3d5.css.map",
+    "main.e205decd.js.map": "/static/js/main.e205decd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bf4c3d5.css",
+    "static/js/main.e205decd.js"
+  ]
+}
