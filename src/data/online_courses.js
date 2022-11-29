@@ -63,6 +63,14 @@ const online_courses = {
     ], 
     Other: [
         {
+            id: 11,
+            title: 'LaTeX A-Z Simplified : Basic to Advanced Comprehensive Guide',
+            organization: 'Udemy',
+            issue: 'Nov 29, 2022',
+            credential: 'https://www.udemy.com/certificate/UC-826e837a-2e7b-43f4-8a2a-f20ac712be64/',
+            learnt: 'LaTeX basics for creating articles, presentations, posters, etc.',
+        },
+        {
             id: 2,
             title: 'Apple Search Ads',
             organization: 'Apple',
