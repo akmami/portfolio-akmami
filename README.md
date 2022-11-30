@@ -12,5 +12,5 @@ This page is created with react and deployed in GitHub using pages.
 ## Deployment to the gh-pages
 
 ```
-    npm run deploy
+npm run deploy
 ```
