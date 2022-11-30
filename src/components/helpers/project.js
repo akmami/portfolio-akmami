@@ -35,6 +35,10 @@ function Project(props) {
                 }
                 <label style={styles.project}>Status: {project.status}</label> <br/>
                 <label style={styles.project}>Release: {project.release}</label> <br/>
+                <React.Fragment>
+                    <label style={styles.project}>URL : </label> 
+                    <label style={styles.click} onClick={ () => openInNewTab(project.url) }>App Store</label> <br/>
+                </React.Fragment>
                 {
                     project.description ? (
                         <React.Fragment>

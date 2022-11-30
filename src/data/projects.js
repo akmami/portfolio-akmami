@@ -5,8 +5,9 @@ const projects = {
             title: 'pport',
             type: 'Hobby',
             platform: 'App Store',
-            status: 'ongoing',
-            release: 'mid Oct',
+            status: 'published',
+            release: 'Nov, 2022',
+            url: 'https://apps.apple.com/tr/app/pport/id6444763004',
             description: [
                 'pport is Personal Portfolio mobile application for IOS devices.',
                 'This app will allow users to monitor the markets and other financial sources.',
