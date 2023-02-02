@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio-akmami/static/css/main.7bf4c3d5.css",
+    "main.css": "/portfolio-akmami/static/css/main.77bf887a.css",
     "main.js": "/portfolio-akmami/static/js/main.210d1eeb.js",
     "static/media/akmuhammet.jpg": "/portfolio-akmami/static/media/akmuhammet.81140bc337283eaced30.jpg",
     "static/media/leetcode.png": "/portfolio-akmami/static/media/leetcode.780cda6abfbd78f044ee.png",
     "static/media/github.png": "/portfolio-akmami/static/media/github.259ed9748eed6c6bf345.png",
     "index.html": "/portfolio-akmami/index.html",
-    "main.7bf4c3d5.css.map": "/portfolio-akmami/static/css/main.7bf4c3d5.css.map",
+    "main.77bf887a.css.map": "/portfolio-akmami/static/css/main.77bf887a.css.map",
     "main.210d1eeb.js.map": "/portfolio-akmami/static/js/main.210d1eeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bf4c3d5.css",
+    "static/css/main.77bf887a.css",
     "static/js/main.210d1eeb.js"
   ]
 }
