@@ -36,7 +36,7 @@
   min-height: 80vh;
   background: #ffffff;
   margin: 3.5rem auto 1.5rem;
-  padding: 2rem 1rem;
+  padding: max(2rem, 20px) max(1rem, 20px);
   color: #245863;
   border-radius: 2rem;
   @media (max-width: 769px) {
@@ -124,7 +124,7 @@ div.center {
   left: 5%;
 }
 .hi {
-  font-size: 28px;
+  font-size: min(1.2em, 28px);
   font-weight: bold;
 }
 .about {
@@ -136,7 +136,7 @@ div.center {
   background: rgba(50, 224, 196, 0.15);
 }
 .more {
-  font-size: 12px;
+  font-size: min(0.5em, 12px);
 }
 
 .contact {
@@ -144,10 +144,10 @@ div.center {
   position: absolute;
   top: 80%;
   left: 5%;
-  font-size: 12px;
+  font-size: min(0.5em, 12px);
 }
 .clickable {
-  font-size: 12px;
+  font-size: min(0.8em, 12px);
   text-decoration: underline;
   font-style: italic;
 }

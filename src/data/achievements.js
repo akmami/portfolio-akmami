@@ -12,7 +12,7 @@ const achievements = [
         id: 2,
         title: 'High Honor Student',
         organization: 'Bilkent University',
-        issue: '2019-2020 Spring',
+        issue: '2019-2020 Spring, 2022-2023 Fall',
         credential: '',
     },
     {

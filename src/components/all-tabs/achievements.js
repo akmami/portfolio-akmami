@@ -1,6 +1,7 @@
 import React from "react";
 import achievements from "../../data/achievements";
 import Achievement from "../helpers/achievement";
+import fonts from "../fonts";
 
 function Achievements() {
     return (
@@ -12,7 +13,7 @@ function Achievements() {
                 achievements.map( (achievement, index) => {
                     return (
                         <React.Fragment key={index}>
-                            <Achievement style={styles.course} achievement={achievement} /> <br/>
+                            <Achievement achievement={achievement} /> <br/>
                         </React.Fragment>
                         
                     );
@@ -27,7 +28,7 @@ export default Achievements;
 let styles = {
     header: {
         width: '100%',
-        fontSize: '28px',
+        fontSize: fonts.title,
         textAlign: 'center',
     },
     div: {
@@ -36,8 +37,5 @@ let styles = {
         overflow: 'hidden',
         position: 'relative',
         textAlign: 'center',
-    },
-    course: {
-        textAlign: 'left',
     }
 }

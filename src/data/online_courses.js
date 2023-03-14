@@ -11,6 +11,22 @@ const online_courses = {
     ],
     Programming: [
         {
+            id: 13,
+            title: 'Python REST APIs with Flask, Docker, MongoDB, and AWS DevOps',
+            organization: 'Udemy',
+            issue: 'Mar 14, 2023',
+            credential: 'https://www.udemy.com/certificate/UC-e1865af6-77ce-4104-a77f-edcec698b70d/',
+            learnt: 'Solidity, Ethereum Ecosystem',
+        },
+        {
+            id: 12,
+            title: 'The Complete Solidity Course - Blockchain - Zero to Expert',
+            organization: 'Udemy',
+            issue: 'Mar 6, 2023',
+            credential: 'https://www.udemy.com/certificate/UC-3a271eed-db8f-40ec-8dd9-156931832a99/',
+            learnt: 'Solidity, Ethereum Ecosystem',
+        },
+        {
             id: 3,
             title: 'React & Django Full Stack: web app, backend API, mobile apps',
             organization: 'Udemy',

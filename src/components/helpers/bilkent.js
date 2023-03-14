@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import fonts from "../fonts";
 
 function BilkentCourse(props) {
 
@@ -22,9 +23,9 @@ export default BilkentCourse;
 
 let styles = {
     title: {
-        fontSize: '24px'
+        fontSize: fonts.subtitle
     },
     course: {
-        fontSize: '16px'
+        fontSize: fonts.text
     }
 }

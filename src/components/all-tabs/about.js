@@ -1,5 +1,6 @@
 import React from "react";
 import about from '../../data/about';
+import fonts from '../fonts';
 
 function About() {
     return (
@@ -32,7 +33,7 @@ export default About;
 let styles = {
     header: {
         width: '100%',
-        fontSize: '28px',
+        fontSize: fonts.title,
         textAlign: 'center',
     },
     div: {
@@ -45,6 +46,6 @@ let styles = {
     p: {
         marginLeft: '2em',
         marginRight: '2em',
-        fontSize: '16px'
+        fontSize: fonts.text
     }
 }

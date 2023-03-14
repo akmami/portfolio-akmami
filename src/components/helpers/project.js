@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import fonts from "../fonts";
 
 function Project(props) {
 
@@ -81,11 +82,12 @@ export default Project;
 
 let styles = {
     title: {
-        fontSize: '24px',
-        fontWeight: 'bold'
+        fontSize: fonts.subtitle,
+        fontWeight: 'bold',
+        fontStyle: 'italic'
     },
     project: {
-        fontSize: '16px'
+        fontSize: fonts.text
     },
     p: {
         marginLeft: '2em'
@@ -94,7 +96,7 @@ let styles = {
         textDecoration: 'underline',
         fontStyle: 'italic',
         cursor: 'pointer',
-        fontSize: '16px',
+        fontSize: fonts.text,
         whiteSpace: 'nowrap' 
     }
 }

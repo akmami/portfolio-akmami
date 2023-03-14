@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import fonts from "../fonts";
 
 function Achievement(props) {
 
@@ -51,7 +52,7 @@ export default Achievement;
 
 let styles = {
     title: {
-        fontSize: '20px',
+        fontSize: fonts.title,
         fontWeight: 'bold'
     },
     achievement: {
@@ -61,7 +62,7 @@ let styles = {
         textDecoration: 'underline',
         fontStyle: 'italic',
         cursor: 'pointer',
-        fontSize: '16px',
+        fontSize: fonts.text,
         whiteSpace: 'nowrap' 
     }
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Course from '../helpers/course';
 import online_courses from '../../data/online_courses';
+import fonts from "../fonts";
 
 function Courses() {
 
@@ -14,7 +15,7 @@ function Courses() {
             {
                 Object.entries(courses).map( ([type, courses]) =>
                     <React.Fragment key={type}>
-                        <label style={styles.course}>{type}</label>
+                        <label style={styles.section}>{type}</label>
                         <br/> <br/>
                         {
                             courses.map( (course, index) => {
@@ -37,7 +38,7 @@ export default Courses;
 let styles = {
     header: {
         width: '100%',
-        fontSize: '28px',
+        fontSize: fonts.title,
         textAlign: 'center',
     },
     div: {
@@ -47,9 +48,9 @@ let styles = {
         position: 'relative',
         textAlign: 'center',
     },
-    course: {
+    section: {
         textAlign: 'left',
-        fontSize: '24px',
+        fontSize: fonts.subtitle,
         fontWeight: 'bold',
     }
 }

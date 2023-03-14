@@ -7,15 +7,15 @@ function Welcome(props) {
     }
 
     const handleLinkedIn = () => {
-        window.open('https://www.linkedin.com/in/akmami/', '_blank', 'noopener,noreferrer');
+        window.open('https://www.linkedin.com/in/akmami/');
     }
 
     const handleGitHub = () => {
-        window.open('https://github.com/akmami/', '_blank', 'noopener,noreferrer');
+        window.open('https://github.com/akmami/');
     }
     
     const handleLeetCode = () => {
-        window.open('https://leetcode.com/akmami/', '_blank', 'noopener,noreferrer');
+        window.open('https://leetcode.com/akmami/');
     }
 
     return (

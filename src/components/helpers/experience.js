@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import fonts from "../fonts";
 
 function Experience(props) {
 
@@ -57,17 +58,17 @@ export default Experience;
 
 let styles = {
     title: {
-        fontSize: '24px',
+        fontSize: fonts.subtitle,
         fontWeight: 'bold'
     },
     experience: {
-        fontSize: '16px'
+        fontSize: fonts.text
     },
     click: {
         textDecoration: 'underline',
         fontStyle: 'italic',
         cursor: 'pointer',
-        fontSize: '16px',
+        fontSize: fonts.text,
         whiteSpace: 'nowrap' 
     }
 }

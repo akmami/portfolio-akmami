@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import BilkentCourse from '../helpers/bilkent';
 import bilkent_courses from '../../data/bilkent_courses';
+import fonts from '../fonts';
 
 function Bilkent() {
 
@@ -16,7 +17,7 @@ function Bilkent() {
                 bilkent.map( (course, index) => {
                     return (
                         <React.Fragment key={course.id}>
-                            <BilkentCourse style={styles.course} course={course} /> <br/>
+                            <BilkentCourse course={course} /> <br/>
                         </React.Fragment>  
                     );
                 })    
@@ -30,7 +31,7 @@ export default Bilkent;
 let styles = {
     header: {
         width: '100%',
-        fontSize: '28px',
+        fontSize: fonts.title,
         textAlign: 'center',
     },
     div: {
@@ -39,10 +40,5 @@ let styles = {
         overflow: 'hidden',
         position: 'relative',
         textAlign: 'center',
-    },
-    course: {
-        textAlign: 'left',
-        fontSize: '24px',
-        fontWeight: 'bold',
     }
 }

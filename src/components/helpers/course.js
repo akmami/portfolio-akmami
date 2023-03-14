@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import fonts from "../fonts";
 
 function Course(props) {
 
     const [course] = useState(props.course);
 
     const openInNewTab = url => {
-        window.open(url, '_blank', 'noopener,noreferrer');
+        window.open(url);
     };
 
     return (
@@ -32,16 +33,16 @@ export default Course;
 
 let styles = {
     title: {
-        fontSize: '24px'
+        fontSize: fonts.subsubtitle
     },
     course: {
-        fontSize: '16px'
+        fontSize: fonts.text
     },
     click: {
         textDecoration: 'underline',
         fontStyle: 'italic',
         cursor: 'pointer',
-        fontSize: '16px',
+        fontSize: fonts.text,
         whiteSpace: 'nowrap' 
     }
 }

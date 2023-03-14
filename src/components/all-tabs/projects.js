@@ -1,6 +1,7 @@
 import React from "react";
 import projects from "../../data/projects";
 import Project from "../helpers/project";
+import fonts from "../fonts";
 
 function Projects() {
 
@@ -19,7 +20,7 @@ function Projects() {
                             projects.map( (project, index) => {
                                 return (
                                     <React.Fragment key={project.id}>
-                                        <Project style={styles.course} project={project} /> <br/>
+                                        <Project project={project} /> <br/>
                                     </React.Fragment>
                                     
                                 );
@@ -37,7 +38,7 @@ export default Projects;
 let styles = {
     header: {
         width: '100%',
-        fontSize: '28px',
+        fontSize: fonts.title,
         textAlign: 'center',
     },
     div: {
@@ -49,7 +50,7 @@ let styles = {
     },
     project: {
         textAlign: 'left',
-        fontSize: '24px',
+        fontSize: fonts.subtitle,
         fontWeight: 'bold'
     }
 }
