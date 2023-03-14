@@ -16,7 +16,7 @@ const online_courses = {
             organization: 'Udemy',
             issue: 'Mar 14, 2023',
             credential: 'https://www.udemy.com/certificate/UC-e1865af6-77ce-4104-a77f-edcec698b70d/',
-            learnt: 'Solidity, Ethereum Ecosystem',
+            learnt: 'Flask, Docker, MongoDB',
         },
         {
             id: 12,
