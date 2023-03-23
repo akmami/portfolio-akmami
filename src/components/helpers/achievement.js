@@ -56,7 +56,7 @@ let styles = {
         fontWeight: 'bold'
     },
     achievement: {
-        fontSize: '16px'
+        fontSize: fonts.text
     },
     click: {
         textDecoration: 'underline',
