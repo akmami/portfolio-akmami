@@ -11,6 +11,14 @@ const online_courses = {
     ],
     Programming: [
         {
+            id: 6,
+            title: 'Solana Blockchain Developer Bootcamp with Rust + JavaScript',
+            organization: 'Udemy',
+            issue: 'Mar 23, 2023',
+            credential: 'https://www.udemy.com/certificate/UC-e8a51aaa-4384-4ce3-8cfb-d3327beae29b/',
+            learnt: 'Solana, Rust, Anchor, JavaScript, Metaplex',
+        },
+        {
             id: 5,
             title: 'Python REST APIs with Flask, Docker, MongoDB, and AWS DevOps',
             organization: 'Udemy',
@@ -30,7 +38,7 @@ const online_courses = {
             id: 3,
             title: 'Bash Shell Scripting: From Zero To Automation',
             organization: 'Udemy',
-            issue: 'Mar 6, 2023',
+            issue: 'Feb 2, 2023',
             credential: 'https://www.udemy.com/certificate/UC-a8369c46-034f-4d90-aa68-d79a3d04dba5/',
             learnt: 'Bash Shell Scripting',
         },
@@ -56,7 +64,7 @@ const online_courses = {
             id: 5,
             title: 'The Complete Cyber Security Course : End Point Protection! V4',
             organization: 'Udemy',
-            issue: 'Feb 23, 2023',
+            issue: 'Mar 23, 2023',
             credential: 'https://www.udemy.com/certificate/UC-1bee3d8c-6e4c-4b74-99d8-70e2357ce7f2/',
             learnt: 'End Point Protection, Antivirus & Malware and Disk Encryptionn',
         },
