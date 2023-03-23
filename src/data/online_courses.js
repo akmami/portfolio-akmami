@@ -11,7 +11,7 @@ const online_courses = {
     ],
     Programming: [
         {
-            id: 13,
+            id: 5,
             title: 'Python REST APIs with Flask, Docker, MongoDB, and AWS DevOps',
             organization: 'Udemy',
             issue: 'Mar 14, 2023',
@@ -19,7 +19,7 @@ const online_courses = {
             learnt: 'Flask, Docker, MongoDB',
         },
         {
-            id: 12,
+            id: 4,
             title: 'The Complete Solidity Course - Blockchain - Zero to Expert',
             organization: 'Udemy',
             issue: 'Mar 6, 2023',
@@ -28,6 +28,14 @@ const online_courses = {
         },
         {
             id: 3,
+            title: 'Bash Shell Scripting: From Zero To Automation',
+            organization: 'Udemy',
+            issue: 'Mar 6, 2023',
+            credential: 'https://www.udemy.com/certificate/UC-a8369c46-034f-4d90-aa68-d79a3d04dba5/',
+            learnt: 'Bash Shell Scripting',
+        },
+        {
+            id: 2,
             title: 'React & Django Full Stack: web app, backend API, mobile apps',
             organization: 'Udemy',
             issue: 'Sep 18, 2022',
@@ -35,7 +43,7 @@ const online_courses = {
             learnt: 'Django, React, React Native, Firebase, Heroku',
         },
         {
-            id: 4,
+            id: 1,
             title: 'The Mac Terminal Course for Beginners',
             organization: 'Udemy',
             issue: 'Jan 16, 2021',
@@ -46,6 +54,14 @@ const online_courses = {
     'Cyber Security': [
         {
             id: 5,
+            title: 'The Complete Cyber Security Course : End Point Protection! V4',
+            organization: 'Udemy',
+            issue: 'Feb 23, 2023',
+            credential: 'https://www.udemy.com/certificate/UC-1bee3d8c-6e4c-4b74-99d8-70e2357ce7f2/',
+            learnt: 'End Point Protection, Antivirus & Malware and Disk Encryptionn',
+        },
+        {
+            id: 4,
             title: 'The Complete Cyber Security Course : Anonymous Browsing! V3',
             organization: 'Udemy',
             issue: 'Jan 19, 2021',
@@ -53,7 +69,7 @@ const online_courses = {
             learnt: 'Anonymous Browsing, Tor, Privacy, Proxy Servers and VPNs',
         },
         {
-            id: 7,
+            id: 3,
             title: 'The Complete Cyber Security Course : Network Security! V2',
             organization: 'Udemy',
             issue: 'Feb 2, 2020',
@@ -61,7 +77,7 @@ const online_courses = {
             learnt: 'Network Security, WiFi Security, Firewalls, Wireshark and Password Managers',
         },
         {
-            id: 8,
+            id: 2,
             title: 'The Complete Cyber Security Course : Hackers Exposed! V1',
             organization: 'Udemy',
             issue: 'Sep 23, 2019',
@@ -69,7 +85,7 @@ const online_courses = {
             learnt: 'Cyber Security Fundementals',
         },
         {
-            id: 9,
+            id: 1,
             title: 'Setup Own VPN Server with Android, iOS, Win & Linux Clients',
             organization: 'Udemy',
             issue: 'Oct 1, 2020',
@@ -79,7 +95,7 @@ const online_courses = {
     ], 
     Other: [
         {
-            id: 11,
+            id: 2,
             title: 'LaTeX A-Z Simplified : Basic to Advanced Comprehensive Guide',
             organization: 'Udemy',
             issue: 'Nov 29, 2022',
@@ -87,7 +103,7 @@ const online_courses = {
             learnt: 'LaTeX basics for creating articles, presentations, posters, etc.',
         },
         {
-            id: 2,
+            id: 1,
             title: 'Apple Search Ads',
             organization: 'Apple',
             issue: 'Jul 27, 2022',
@@ -97,20 +113,20 @@ const online_courses = {
     ],
     Hobby: [
         {
-            id: 6,
-            title: 'Beden Dili Eğitimi',
-            organization: 'Udemy',
-            issue: 'Jan 16, 2021',
-            credential: 'https://www.udemy.com/certificate/UC-854962b1-fb9c-478d-be5f-5aa9d10378ee/',
-            learnt: 'Etkili Iletisim Becerileri',
-        },
-        {
-            id: 10,
+            id: 2,
             title: '§ARAPLA TANISMA EGiTiMi',
             organization: 'Neo Skala',
             issue: 'Jun 6, 2021',
             credential: 'https://www.neoskola.com/sertifikalar/DhLoM43bBWrgXmbWL',
             learnt: 'Hobby',
+        },
+        {
+            id: 1,
+            title: 'Beden Dili Eğitimi',
+            organization: 'Udemy',
+            issue: 'Jan 16, 2021',
+            credential: 'https://www.udemy.com/certificate/UC-854962b1-fb9c-478d-be5f-5aa9d10378ee/',
+            learnt: 'Etkili Iletisim Becerileri',
         }
     ]
 };
