@@ -13,14 +13,22 @@ function Bilkent() {
             <div style={styles.div}>
                 <label style={styles.header}>Bilkent</label> <br/> <br/>
             </div>
-            {
-                bilkent.map( (course, index) => {
-                    return (
-                        <React.Fragment key={course.id}>
-                            <BilkentCourse course={course} /> <br/>
-                        </React.Fragment>  
-                    );
-                })    
+            {  
+                Object.entries(bilkent).map( ([type, courses]) =>
+                    <React.Fragment key={type}>
+                        <label style={styles.course}>{type}</label>
+                        <br/> <br/>
+                        {
+                            courses.map( (course, index) => {
+                                return (
+                                    <React.Fragment key={course.id}>
+                                        <BilkentCourse course={course} /> <br/>
+                                    </React.Fragment>  
+                                );
+                            })
+                        }
+                    </React.Fragment>
+                ) 
             }
         </div>
     )
@@ -40,5 +48,10 @@ let styles = {
         overflow: 'hidden',
         position: 'relative',
         textAlign: 'center',
+    },
+    course: {
+        textAlign: 'left',
+        fontSize: fonts.subtitle,
+        fontWeight: 'bold',
     }
 }
