@@ -106,13 +106,13 @@ ul.nav li.active {
   position: relative;
 }
 .image{
-  opacity: 0.7;
+  opacity: 0.85;
   position: absolute;
   right: 0;
   top: 0;
   object-fit: cover;
-  height: 100%;
-  max-width: 70%;
+  height: 110%;
+  max-width: 80%;
   
 }
 div.center {
