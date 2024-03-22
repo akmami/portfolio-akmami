@@ -20,15 +20,11 @@ function Welcome(props) {
 
     return (
         <div className="welcome">
-            <img className="image" src={require('../../assets/akmuhammet.jpg')} alt='' />
+            <img className="image" src={require('../../assets/akmuhammet.png')} alt='' />
             <div className="center">
                 <label className="hi">Hi, I'm Akmuhammet.</label>
                 <br/>
-                <label className="CS">I'm Sr. Comupter Science Student</label>
-                <br/>
-                <label className="SWE"> + </label>
-                <br/>
-                <label className="SWE">Software Engineer Candidate</label>
+                <label className="CS">I'm a M.Sc. Student at Bilkent University</label>          
                 <br/>
                 <label className="more">More information in </label> 
                     <label className="more about" onClick={handleAbout}>About</label>
