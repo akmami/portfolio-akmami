@@ -1,7 +1,7 @@
-# Akmami's Portfolio
+# Portfolio
 
 
-You can reach to the site from [here](https://akmami.github.io/portfolio-akmami/).
+You can reach to the site from [here](https://akmami.github.io/akmami/).
 
 
 ## Details
