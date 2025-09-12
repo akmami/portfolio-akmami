@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-akmami/static/css/main.df3f4841.css",
-    "main.js": "/portfolio-akmami/static/js/main.19496085.js",
+    "main.css": "/portfolio-akmami/static/css/main.6cb47792.css",
+    "main.js": "/portfolio-akmami/static/js/main.99eaa521.js",
     "static/media/akmuhammet.png": "/portfolio-akmami/static/media/akmuhammet.c1922c0fb1f4fc22cc17.png",
     "static/media/leetcode.png": "/portfolio-akmami/static/media/leetcode.780cda6abfbd78f044ee.png",
     "static/media/github.png": "/portfolio-akmami/static/media/github.259ed9748eed6c6bf345.png",
+    "static/media/email.png": "/portfolio-akmami/static/media/email.9063c2d573dcbeb17b27.png",
     "index.html": "/portfolio-akmami/index.html",
-    "main.df3f4841.css.map": "/portfolio-akmami/static/css/main.df3f4841.css.map",
-    "main.19496085.js.map": "/portfolio-akmami/static/js/main.19496085.js.map"
+    "main.6cb47792.css.map": "/portfolio-akmami/static/css/main.6cb47792.css.map",
+    "main.99eaa521.js.map": "/portfolio-akmami/static/js/main.99eaa521.js.map"
   },
   "entrypoints": [
-    "static/css/main.df3f4841.css",
-    "static/js/main.19496085.js"
+    "static/css/main.6cb47792.css",
+    "static/js/main.99eaa521.js"
   ]
 }
