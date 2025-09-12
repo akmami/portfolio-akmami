@@ -123,10 +123,18 @@ div.center {
   transform: translateY(-50%);
   left: 5%;
 }
+
 .hi {
-  font-size: min(1.2em, 28px);
+  font-size: min(1.2em, 36px);
   font-weight: bold;
 }
+.CS {
+  font-size: min(0.8em, 24px);
+}
+.more {
+  font-size: min(0.5em, 15px);
+}
+
 .about {
   text-decoration: underline;
   font-style: italic;
@@ -135,19 +143,16 @@ div.center {
 .about:hover {
   background: rgba(50, 224, 196, 0.15);
 }
-.more {
-  font-size: min(0.5em, 12px);
-}
+
 
 .contact {
   margin: 0;
   position: absolute;
   top: 80%;
   left: 5%;
-  font-size: min(0.5em, 12px);
+  font-size: min(0.5em, 15px);
 }
 .clickable {
-  font-size: min(0.8em, 12px);
   text-decoration: underline;
   font-style: italic;
 }
@@ -156,4 +161,15 @@ div.center {
   width: 15px;
   height: 15px;
   align-self: baseline;
+}
+
+.email {
+  font-size: min(1em, 15px);
+}
+
+.emailImage {
+  position: absolute; 
+  right: 0; 
+  bottom: 0;
+  height: min(1em, 15px);
 }

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Course from '../helpers/course';
+import Certificate from '../helpers/certificate';
 import online_courses from '../../data/online_courses';
-import fonts from "../fonts";
 
-function Courses() {
+function Certificates() {
 
     const [courses] = useState(online_courses);
 
@@ -21,7 +20,7 @@ function Courses() {
                             courses.map( (course, index) => {
                                 return (
                                     <React.Fragment key={course.id}>
-                                        <Course style={styles.course} course={course} /> <br/>
+                                        <Certificate style={styles.course} course={course} /> <br/>
                                     </React.Fragment>  
                                 );
                             })
@@ -33,12 +32,12 @@ function Courses() {
     )
 }
 
-export default Courses;
+export default Certificates;
 
 let styles = {
     header: {
         width: '100%',
-        fontSize: fonts.title,
+        fontSize: '1.5em',
         textAlign: 'center',
     },
     div: {
@@ -50,7 +49,7 @@ let styles = {
     },
     section: {
         textAlign: 'left',
-        fontSize: fonts.subtitle,
+        fontSize: '1em',
         fontWeight: 'bold',
     }
 }

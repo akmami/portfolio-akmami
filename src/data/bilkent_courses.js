@@ -1,5 +1,5 @@
 const bilkent_courses = {    
-    Master: [
+    "M.S. in Computer Engineering": [
         {
             id: '9',
             title: 'CS588 - Data Science for Software Engineering ',
@@ -36,7 +36,7 @@ const bilkent_courses = {
             category: 'Graduate Elective'
         },
     ],
-    Bachelor: [
+    "Computer Engineering": [
         {
             id: '1',
             title: 'CS464 - Introduction to Machine Learning',

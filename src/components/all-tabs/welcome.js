@@ -1,5 +1,3 @@
-import React from "react";
-
 function Welcome(props) {
 
     const handleAbout = () => {
@@ -24,31 +22,32 @@ function Welcome(props) {
             <div className="center">
                 <label className="hi">Hi, I'm Akmuhammet.</label>
                 <br/>
-                <label className="CS">I'm a M.Sc. Student at Bilkent University</label>          
+                <label className="CS">M.S. in Computer Science graduate</label>          
                 <br/>
                 <label className="more">More information in </label> 
                     <label className="more about" onClick={handleAbout}>About</label>
                 <label className="more"> page</label>
                 <br/>
             </div>
-                <div className="contact">
-                    <img className="contactImage" src={require('../../assets/linkedin.png')} alt='' />
-                    <label> : </label>
-                    <label className="clickable" onClick={handleLinkedIn}>akmami</label>
-                    <label> </label>
-                   
-                    <img className="contactImage" src={require('../../assets/github.png')} alt='' />
-                    <label> : </label>
-                    <label className="clickable" onClick={handleGitHub}>akmami</label>
-                    <label> </label>
+            <div className="contact">
+                <img className="contactImage" src={require('../../assets/linkedin.png')} alt='' />
+                <label> : </label>
+                <label className="clickable" onClick={handleLinkedIn}>akmami</label>
+                <label> </label>
+                
+                <img className="contactImage" src={require('../../assets/github.png')} alt='' />
+                <label> : </label>
+                <label className="clickable" onClick={handleGitHub}>akmami</label>
+                <label> </label>
 
-                    <img className="contactImage" src={require('../../assets/leetcode.png')} alt='' />
-                    <label> : </label>
-                    <label className="clickable" onClick={handleLeetCode}>akmami</label> <br/>
-
-                    <label className="email">Email: </label> 
-                    <label className="clickable" >akmuhammet99@gmail.com</label> <br/>
-                </div>
+                <img className="contactImage" src={require('../../assets/leetcode.png')} alt='' />
+                <label> : </label>
+                <label className="clickable" onClick={handleLeetCode}>akmami</label> <br/>
+                
+                <label className="email">Email: &nbsp;</label> 
+                <img className="emailImage" src={require('../../assets/email.png')} alt='' />
+                
+            </div>
         </div>
     )
 }

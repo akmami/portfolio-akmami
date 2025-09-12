@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import fonts from "../fonts";
 
 function Achievement(props) {
 
@@ -13,8 +12,20 @@ function Achievement(props) {
         achievement ? (
             <div>
                 <label style={styles.title}>{achievement.title}</label> <br/>
-                <label style={styles.achievement}>Organization: {achievement.organization}</label> <br/>
-                <label style={styles.achievement}>Issued: {achievement.issue}</label> <br/>
+                <label style={styles.achievement}>{achievement.organization}</label>
+                {
+                    achievement.issue ? (
+                        <label style={styles.achievement}> &#9702; {achievement.issue}</label>
+                    ) : null
+                }
+                <br/>
+                {
+                    achievement.semester ? (
+                        <React.Fragment>
+                            <label style={styles.achievement}>Semester: {achievement.semester}</label> <br/>
+                        </React.Fragment>
+                    ) : ('')
+                }
                 {
                     achievement.credential ? (
                         <React.Fragment>
@@ -52,17 +63,17 @@ export default Achievement;
 
 let styles = {
     title: {
-        fontSize: fonts.title,
+        fontSize: '1em',
         fontWeight: 'bold'
     },
     achievement: {
-        fontSize: fonts.text
+        fontSize: '0.6em'
     },
     click: {
         textDecoration: 'underline',
         fontStyle: 'italic',
         cursor: 'pointer',
-        fontSize: fonts.text,
+        fontSize: '0.6em',
         whiteSpace: 'nowrap' 
     }
 }

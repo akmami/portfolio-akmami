@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import fonts from "../fonts";
 
 function Experience(props) {
 
@@ -13,19 +12,27 @@ function Experience(props) {
         experience ? (
             <div>
                 <label style={styles.title}>{experience.title}</label> <br/>
-                <label style={styles.experience}>Company: {experience.organization}</label> <br/>
-                <label style={styles.experience}>Date: {experience.date}</label> <br/>
+                <label style={styles.company}>{experience.organization}</label> 
+                <label style={styles.experience}> &#9643; {experience.type}</label> <br/>
+                <label style={styles.experience}>{experience.date}</label> <br/>
                 {
                     experience.descriptions.map( (row, index) => {
                         return (
                             <React.Fragment key={index}>
-                                <label style={styles.experience} > - {row}</label> <br/>
+                                <label style={styles.experience} > &#x2022; {row}</label> <br/>
                             </React.Fragment>
                         )
                         
                     })
                 }
-                <label style={styles.experience}>Used: {experience.used}</label> <br/>
+                {
+                    experience.used ? (
+                        <div>
+                            <label style={styles.experience}>Used: {experience.used}</label> <br/>
+                        </div>
+                        ) : 
+                        null
+                }
                 {
                     experience.repos.map( (repo, index) => {
                         return (
@@ -49,7 +56,6 @@ function Experience(props) {
             <div>
                 <label>Error</label> <br/>
             </div>
-            
         )
     )
 }
@@ -58,17 +64,22 @@ export default Experience;
 
 let styles = {
     title: {
-        fontSize: fonts.subtitle,
+        fontSize: '1em',
         fontWeight: 'bold'
     },
     experience: {
-        fontSize: fonts.text
+        fontSize: '0.6em',
+        fontWeight: 'normal'
+    },
+    company: {
+        fontSize: '0.6em',
+        fontWeight: 'bold'
     },
     click: {
         textDecoration: 'underline',
         fontStyle: 'italic',
         cursor: 'pointer',
-        fontSize: fonts.text,
+        fontSize: '0.6em',
         whiteSpace: 'nowrap' 
     }
 }

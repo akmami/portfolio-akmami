@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import fonts from "../fonts";
 
 function Project(props) {
 
@@ -13,13 +12,7 @@ function Project(props) {
         project ? (
             <div>
                 <label style={styles.title}>{project.title}</label> <br/>
-                {
-                    project.course ? (
-                        <React.Fragment>
-                            <label style={styles.project}>Type: {project.type}</label> <br/>
-                        </React.Fragment>
-                    ) : ('')
-                }
+                <label style={styles.issue}>{project.issue}</label> <br/>
                 {
                     project.course ? (
                         <React.Fragment>
@@ -28,22 +21,15 @@ function Project(props) {
                     ) : ('')
                 }
                 {
-                    project.course ? (
+                    project.platform ? (
                         <React.Fragment>
-                            <label style={styles.project}>Platform: {project.platform}</label> <br/>
+                            <label style={styles.project}>Platform: {project.platform} (archived)</label> <br/>
                         </React.Fragment>
                     ) : ('')
                 }
-                <label style={styles.project}>Status: {project.status}</label> <br/>
-                <label style={styles.project}>Release: {project.release}</label> <br/>
-                <React.Fragment>
-                    <label style={styles.project}>URL : </label> 
-                    <label style={styles.click} onClick={ () => openInNewTab(project.url) }>App Store</label> <br/>
-                </React.Fragment>
                 {
                     project.description ? (
                         <React.Fragment>
-                            <label style={styles.project}>Description: </label> <br/>
                             {
                                 project.description.map( (row, index) => {
                                     return (
@@ -58,11 +44,11 @@ function Project(props) {
                     ) : ('')
                     
                 }
-                <label style={styles.project}>Used: {project.used}</label> <br/>
                 {
                     project.repo ? (
                         <React.Fragment>
-                            <label style={styles.project} onClick={ () => openInNewTab(project.repo)}>Repo: {project.repo}</label> <br/>
+                            <label style={styles.project}>Available : </label> 
+                            <label style={styles.click} onClick={ () => openInNewTab(project.repo) }>{project.repo}</label> <br/>
                         </React.Fragment>
                     ) : ('')
                 }
@@ -82,21 +68,24 @@ export default Project;
 
 let styles = {
     title: {
-        fontSize: fonts.subtitle,
+        fontSize: '0.8em',
         fontWeight: 'bold',
         fontStyle: 'italic'
     },
+    issue: {
+        fontSize: '0.6em',
+    },
     project: {
-        fontSize: fonts.text
+        fontSize: '0.6em'
     },
     p: {
-        marginLeft: '2em'
+        marginLeft: '0.6em'
     },
     click: {
         textDecoration: 'underline',
         fontStyle: 'italic',
         cursor: 'pointer',
-        fontSize: fonts.text,
+        fontSize: '0.6em',
         whiteSpace: 'nowrap' 
     }
 }

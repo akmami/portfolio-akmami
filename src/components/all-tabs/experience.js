@@ -1,7 +1,6 @@
 import React from "react";
 import experiences from "../../data/experiences";
 import Experience from "../helpers/experience";
-import fonts from "../fonts";
 
 function Experiences() {
 
@@ -29,7 +28,7 @@ export default Experiences;
 let styles = {
     header: {
         width: '100%',
-        fontSize: fonts.title,
+        fontSize: '1.5em',
         textAlign: 'center',
     },
     div: {

@@ -1,7 +1,6 @@
 import React from "react";
 import projects from "../../data/projects";
 import Project from "../helpers/project";
-import fonts from "../fonts";
 
 function Projects() {
 
@@ -14,8 +13,14 @@ function Projects() {
             {
                 Object.entries(projects).map( ([type, projects]) =>
                     <React.Fragment key={type}>
-                        <label style={styles.project}>{type}</label>
-                        <br/> <br/>
+                        {
+                            type !== "None" ? (
+                                <div>
+                                    <label style={styles.project}>{type}</label>
+                                    <br/> <br/>
+                                </div>
+                            ) : null
+                        }
                         {
                             projects.map( (project, index) => {
                                 return (
@@ -38,7 +43,7 @@ export default Projects;
 let styles = {
     header: {
         width: '100%',
-        fontSize: fonts.title,
+        fontSize: '1.5em',
         textAlign: 'center',
     },
     div: {
@@ -50,7 +55,7 @@ let styles = {
     },
     project: {
         textAlign: 'left',
-        fontSize: fonts.subtitle,
+        fontSize: '1em',
         fontWeight: 'bold'
     }
 }

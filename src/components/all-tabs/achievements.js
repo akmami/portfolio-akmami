@@ -1,7 +1,6 @@
 import React from "react";
 import achievements from "../../data/achievements";
 import Achievement from "../helpers/achievement";
-import fonts from "../fonts";
 
 function Achievements() {
     return (
@@ -28,7 +27,7 @@ export default Achievements;
 let styles = {
     header: {
         width: '100%',
-        fontSize: fonts.title,
+        fontSize: '1.5em',
         textAlign: 'center',
     },
     div: {

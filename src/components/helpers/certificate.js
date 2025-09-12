@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import fonts from "../fonts";
+import { useState } from "react";
 
-function Course(props) {
+function Certificate(props) {
 
     const [course] = useState(props.course);
 
@@ -13,8 +12,8 @@ function Course(props) {
         course ? (
             <div>
                 <label style={styles.title}>{course.title}</label> <br/>
-                <label style={styles.course}>Organization: {course.organization}</label> <br/>
-                <label style={styles.course}>Issued: {course.issue}</label> <br/>
+                <label style={styles.organization}>{course.organization}</label>
+                <label style={styles.course}> &#9702; {course.issue}</label> <br/>
                 <label style={styles.course}>Credential: </label>
                 <label style={styles.click}
                     onClick={() => openInNewTab(course.credential)}>click to see</label>
@@ -29,20 +28,24 @@ function Course(props) {
     )
 }
 
-export default Course;
+export default Certificate;
 
 let styles = {
     title: {
-        fontSize: fonts.subsubtitle
+        fontSize: '0.8em'
+    },
+    organization: {
+        fontSize: '0.6em',
+        fontWeight: 'bold'
     },
     course: {
-        fontSize: fonts.text
+        fontSize: '0.6em'
     },
     click: {
         textDecoration: 'underline',
         fontStyle: 'italic',
         cursor: 'pointer',
-        fontSize: fonts.text,
+        fontSize: '0.6em',
         whiteSpace: 'nowrap' 
     }
 }

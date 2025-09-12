@@ -1,18 +1,9 @@
 const about = [
-    `My name is Akmuhammet Ashyralyyev but you can call me Muhammed, akmami, mami, or even aki, ak (due to obvious reasons).
-    I was born in Ashgabat, the capital of Turkmenistan, in 1999. 
-    I went to school no. 51 until we moved to Turkey, Istanbul in 2010. 
-    For 8 years, I have completed my middle and high school education there. During that time, I attended many math competitions and won several achievements.`,
-    `In 2018, I graduated from Ugur Okullari and got accepted by Bilkent University with a %100 scholarship.
-    I have learnt many things and developed many skills over 4 years. The online courses I have completed can be found in the section Courses.
-    Apart from learning, I have tried to put that knowledge into practice, specifically, on course projects. The examples can be found on my GitHub repos.
-    I have also got a chance to have job experiences that 2 of which are internships.`,
-    `Lastly, I like travelling, feasting, and watching movies/series. On the other hand, I am really rigorous (mainly in all aspects of my life). 
-    Sometimes it's a blessing, sometimes it's a curse :'). But I always find a way to transfer it into something to obtain good results.`,
-    `Strong: Swift, Python (+Django), Java (+Spring Framework), git, MySQL + OOP`,
-    `Middle: C++, JavaScript (React), Heroku`,
-    `Limited: RabbitMQ`,
-    `Interests: Backend, Mobile App Development, Algorithms, Finance, Bioinformatics, Cyber Security`
+    `I am a recent graduate of the Master's program in Computer Science at Bilkent University, where I specialized in bioinformatics and high-performance computing. My academic journey has been shaped by a strong interest in the intersection of computer science and biology, with a particular focus on designing computational tools that address large-scale genomic challenges. Building on my Bachelor's degree in Computer Science, also from Bilkent University, I have developed a solid foundation in algorithms, machine learning, and systems, which I have applied to the computational problems of genome analysis.`,
+    `My research has centered on the development of bioinformatics tools that are efficient, scalable, and parallelizable. I have contributed to projects involving comparative genomics, pangenomics, and structural variation discovery, with a particular emphasis on leveraging Locally Consistent Parsing (LCP) for genomic data analysis. Notable contributions include LCPTOOLS, the first practical implementation of LCP; GenCore, a tool for highly accurate genomic sequence comparison and evolutionary analysis; and LCPan, a novel approach to variation graph construction that surpasses existing methods in both speed and memory efficiency. These projects reflect my commitment to advancing computational methods for biological discovery and my ability to bridge theoretical concepts with practical, high-impact applications.`,
+    `Beyond research, I have been actively involved in teaching and mentoring during my graduate studies. As a Teaching Assistant, I supported courses in bioinformatics algorithms, automata theory, and programming, while also mentoring undergraduate students in research projects. These experiences strengthened my pedagogical skills, deepened my understanding of fundamental concepts, and reinforced the value I place on collaborative academic environments.`,
+    `My technical expertise spans a diverse set of programming languages and frameworks, including C/C++, Python, Java, React, Django, Swift, and R, complemented by practical experience with distributed systems, parallel computing, and data-intensive applications. Alongside technical proficiency, I bring strong soft skills in communication, teamwork, and problem-solving, cultivated through both academic and industry experiences. My professional background includes internships in backend and iOS development, where I gained applied software engineering experience in fast-paced environments.`,
+    `Looking forward, I aim to further pursue research and development at the intersection of bioinformatics, algorithms, and systems, contributing to innovations that enable more accurate, efficient, and scalable solutions for genomic data analysis. I am particularly motivated by the potential of computational methods to advance biomedical research, and I aspire to contribute to both academic inquiry and the development of tools that support the broader scientific community.`
 ]
 
 export default about;

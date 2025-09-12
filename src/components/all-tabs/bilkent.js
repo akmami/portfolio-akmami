@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import BilkentCourse from '../helpers/bilkent';
 import bilkent_courses from '../../data/bilkent_courses';
-import fonts from '../fonts';
 
 function Bilkent() {
 
@@ -39,7 +38,7 @@ export default Bilkent;
 let styles = {
     header: {
         width: '100%',
-        fontSize: fonts.title,
+        fontSize: '1.5em',
         textAlign: 'center',
     },
     div: {
@@ -51,7 +50,7 @@ let styles = {
     },
     course: {
         textAlign: 'left',
-        fontSize: fonts.subtitle,
+        fontSize: '1em',
         fontWeight: 'bold',
     }
 }
