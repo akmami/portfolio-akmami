@@ -2,7 +2,7 @@
 
 .card-grid {
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  align-items: start;
+  align-items: stretch;   /* equal-height cards per row (Hobby cards match) */
 }
 .project-card { display: flex; flex-direction: column; }
 .project-card .card-body { flex: 1; }
