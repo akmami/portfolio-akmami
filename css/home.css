@@ -138,3 +138,17 @@
   .hero { padding: 28px 16px 40px; }
   .hero-photo img { max-width: 210px; }
 }
+
+/* Email shown as an image — the address is NOT in the HTML source, to deter
+   scrapers. Higher specificity to beat the .hero-contact img rule. */
+.hero-contact .email-item { align-items: center; }
+.hero-contact .contact-label { font-weight: 600; color: var(--muted); }
+.hero-contact .email-img {
+  height: 19px;
+  width: auto;
+  border: none;
+  box-shadow: none;
+  background: none;
+  padding: 0;
+  object-fit: contain;
+}

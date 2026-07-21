@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://akmami.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://akmami.com/about.html</loc><priority>0.8</priority></url>
+  <url><loc>https://akmami.com/experience.html</loc><priority>0.8</priority></url>
+  <url><loc>https://akmami.com/bilkent.html</loc><priority>0.6</priority></url>
+  <url><loc>https://akmami.com/achievements.html</loc><priority>0.6</priority></url>
+  <url><loc>https://akmami.com/projects.html</loc><priority>0.8</priority></url>
+  <url><loc>https://akmami.com/certificates.html</loc><priority>0.6</priority></url>
+</urlset>

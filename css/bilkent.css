@@ -25,7 +25,8 @@
   color: var(--ink);
   font-size: .98rem;
 }
-.course .tag { align-self: flex-start; }
+/* Pin the category label to the bottom so it aligns across cards */
+.course .tag { align-self: flex-start; margin-top: auto; }
 
 @media (max-width: 520px) {
   .course-grid { grid-template-columns: 1fr; }
