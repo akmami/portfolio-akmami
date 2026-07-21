@@ -1,0 +1,38 @@
+/* achievements.css — Achievements page */
+
+.card-grid.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* Achievement meta (dates / semester lists) can be long — allow it to wrap
+   instead of overflowing the card. Overrides the nowrap on .card-date. */
+.achievements-page .card-date,
+.card-grid.two-col .card-date {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: right;
+  max-width: 60%;
+}
+
+.result-badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 12px;
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+.card-org { display: block; margin-top: 2px; }
+
+/* Safety: nothing in a card should push past its edges */
+.card-grid.two-col .card { overflow-wrap: anywhere; }
+.card-grid.two-col .card-head { flex-wrap: wrap; }
+
+@media (max-width: 520px) {
+  .card-grid.two-col { grid-template-columns: 1fr; }
+  .card-grid.two-col .card-date { max-width: 100%; text-align: left; }
+}

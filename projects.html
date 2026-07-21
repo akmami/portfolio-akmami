@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Akmuhammet Ashyralyyev</title>
+  <meta name="description" content="Open-source and personal projects.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/projects.css">
+</head>
+<body data-page="projects">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span>Akmuhammet Ashyralyyev<span class="brand-sub">Computer Scientist</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav" id="primary-nav">
+        <li><a href="index.html" data-nav="index">Home</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="experience.html" data-nav="experience">Experience</a></li>
+        <li><a href="bilkent.html" data-nav="bilkent">Bilkent</a></li>
+        <li><a href="achievements.html" data-nav="achievements">Achievements</a></li>
+        <li><a href="projects.html" data-nav="projects">Projects</a></li>
+        <li><a href="certificates.html" data-nav="certificates">Certificates</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="page">
+    <h1 class="page-title">Projects</h1>
+    <p class="page-lead">Open-source bioinformatics tools and personal builds.</p>
+    <h2 class="section-heading">Research &amp; Tools</h2>
+    <div class="card-grid">
+      <article class="card project-card research-card">
+        <div class="card-head">
+          <span class="card-title">akhal</span>
+          <span class="card-date">Apr 2025 - present</span>
+        </div>
+        <p class="card-body">akhal is a command-line toolkit for processing and analyzing r/GFA (reference Graphical Fragment Assembly) files, the graph format used by modern pangenome pipelines. It validates graph structure, computes summary statistics over the graph, and converts GAF (Graphical Alignment Format) alignments into the widely supported SAM (Sequence Alignment Map) format, bringing graph-based alignments into the standard samtools ecosystem.</p>
+        <div class="project-links">
+          <a class="repo-link" href="https://github.com/akmami/akhal" target="_blank" rel="noopener">github.com/akmami/akhal</a>
+        </div>
+      </article>
+      <article class="card project-card research-card">
+        <div class="card-head">
+          <span class="card-title">LCPan</span>
+          <span class="card-date">Dec 2024 - present</span>
+        </div>
+        <p class="card-body">LCPan is a novel method for constructing variation (pangenome) graphs that leverages Locally Consistent Parsing (LCP) to incorporate genomic variations efficiently. Where existing tools suffer from high, super-linear memory growth as the number of variants increases, LCPan guarantees linear memory scalability by partitioning sequences into consistent cores, so graphs can be built quickly, in parallel, and with a small memory footprint at whole-genome scale.</p>
+        <div class="project-links">
+          <a class="repo-link" href="https://github.com/BilkentCompGen/lcpan" target="_blank" rel="noopener">github.com/BilkentCompGen/lcpan</a>
+          <a class="doi-link" href="https://doi.org/10.1186/s13059-026-04088-w" target="_blank" rel="noopener">Paper (DOI)</a>
+        </div>
+      </article>
+      <article class="card project-card research-card">
+        <div class="card-head">
+          <span class="card-title">GenCore</span>
+          <span class="card-date">Jun 2024 - present</span>
+        </div>
+        <p class="card-body">GenCore estimates genomic distances for comparing sequences without relying on the hashing and sketching techniques used by most alignment-free tools. Instead it applies Locally Consistent Parsing (LCP), processing strings iteratively and partitioning genomic data into small, reproducible modules called cores. Shared cores between genomes yield highly accurate genetic-distance estimates, which GenCore uses to reconstruct reliable phylogenetic trees with low computational overhead.</p>
+        <div class="project-links">
+          <a class="repo-link" href="https://github.com/BilkentCompGen/gencore" target="_blank" rel="noopener">github.com/BilkentCompGen/gencore</a>
+          <a class="doi-link" href="https://www.biorxiv.org/content/10.64898/2026.01.10.698768v2" target="_blank" rel="noopener">Paper (DOI)</a>
+        </div>
+      </article>
+      <article class="card project-card research-card">
+        <div class="card-head">
+          <span class="card-title">lcptools</span>
+          <span class="card-date">Aug 2023 - present</span>
+        </div>
+        <p class="card-body">lcptools is the first practical, high-performance implementation of Locally Consistent Parsing (LCP), written in C. LCP partitions and labels a string into substrings of nearly uniform length called cores; unlike sketching, it guarantees a uniform positional distribution of cores, that identical cores receive identical labels, and that every character belongs to at least one core. lcptools computes these cores efficiently on very large datasets and provides the foundation for both GenCore and LCPan.</p>
+        <div class="project-links">
+          <a class="repo-link" href="https://github.com/BilkentCompGen/lcptools" target="_blank" rel="noopener">github.com/BilkentCompGen/lcptools</a>
+          <a class="doi-link" href="https://doi.org/10.1186/s13059-026-04088-w" target="_blank" rel="noopener">Paper (DOI)</a>
+        </div>
+      </article>
+      <article class="card project-card research-card">
+        <div class="card-head">
+          <span class="card-title">SVTrek</span>
+          <span class="card-date">May 2022 - present</span>
+        </div>
+        <p class="card-body">SVTrek is a tool for Structural Variation (SV) discovery performed directly on sequence-to-graph alignments. It aims to detect large genomic rearrangements in the pangenome-graph setting, rather than against a single linear reference, so that variation is captured with the richer context a graph representation provides.</p>
+        <div class="project-links">
+          <a class="repo-link" href="https://github.com/akmami/SVTrek" target="_blank" rel="noopener">github.com/akmami/SVTrek</a>
+        </div>
+      </article>
+    </div>
+    <h2 class="section-heading">Hobby</h2>
+    <div class="card-grid">
+      <article class="card project-card">
+        <div class="card-head">
+          <span class="card-title">e-JAAM</span>
+          <span class="card-date">Dec 2023 - Jun 2024</span>
+        </div>
+        <p class="card-body">The e-Journal of Analysis and Applied Mathematics is an international journal dedicated to the latest analysis and applied mathematics advancements. I led the design and implementation of the e-JAAM website using React, hosted on an AWS Lightsail server running Ubuntu with Nginx, GoDaddy for domain management and Let’s Encrypt for SSL.</p>
+        <div class="project-links">
+          <a class="repo-link" href="https://ejaam.org" target="_blank" rel="noopener">ejaam.org</a>
+        </div>
+      </article>
+      <article class="card project-card">
+        <div class="card-head">
+          <span class="card-title">pport</span>
+          <span class="card-date">Nov 2022</span>
+        </div>
+        <p class="card-body">pport is a Personal Portfolio mobile application for iOS devices that allows users to monitor the markets and other financial sources. Published on the App Store.</p>
+        <div class="project-links">
+          <a class="repo-link" href="https://github.com/pport-application" target="_blank" rel="noopener">github.com/pport-application</a>
+        </div>
+      </article>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/akmami/" target="_blank" rel="noopener"><img src="assets/linkedin.png" alt="">LinkedIn</a>
+        <a href="https://github.com/akmami/" target="_blank" rel="noopener"><img src="assets/github.png" alt="">GitHub</a>
+        <a href="https://leetcode.com/akmami/" target="_blank" rel="noopener"><img src="assets/leetcode.png" alt="">LeetCode</a>
+        <a href="mailto:akmuhammet99@gmail.com"><img src="assets/email.png" alt="">Email</a>
+      </div>
+      <div class="footer-copy">© 2026 Akmuhammet Ashyralyyev</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

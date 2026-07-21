@@ -1,0 +1,13 @@
+/* certificates.css — Certificates page */
+
+.card-grid.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+.cert-card { display: flex; flex-direction: column; }
+.cert-card .card-org { display: block; margin-top: 2px; }
+.cert-card .card-body { flex: 1; }
+.cert-card .card-body strong { color: var(--accent-dark); }
+
+@media (max-width: 520px) {
+  .card-grid.two-col { grid-template-columns: 1fr; }
+}

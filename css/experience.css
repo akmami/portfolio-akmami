@@ -1,0 +1,11 @@
+/* experience.css — Experience page */
+
+.card-grid { grid-template-columns: 1fr; }
+
+/* Timeline-style accent using the shared card */
+.card .tag { margin-top: 2px; }
+.card-head .card-title { font-size: 1.12rem; }
+
+@media (max-width: 520px) {
+  .card { padding: 18px 18px; }
+}
