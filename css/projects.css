@@ -1,29 +1,7 @@
 /* projects.css — Projects page */
 
-.card-grid {
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  align-items: stretch;   /* equal-height cards per row (Hobby cards match) */
-}
-.project-card { display: flex; flex-direction: column; }
-.project-card .card-body { flex: 1; }
-
-/* Research & Tools: uniform, fixed-height cards so uneven text stays tidy.
-   Longer descriptions scroll gently inside the fixed frame; the links row
-   stays pinned to the bottom. */
-.research-card {
-  height: 420px;
-}
-.research-card .card-body {
-  overflow-y: auto;
-  margin-right: -6px;   /* keep text off the scrollbar */
-  padding-right: 6px;
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent) transparent;
-}
-.research-card .card-body::-webkit-scrollbar { width: 6px; }
-.research-card .card-body::-webkit-scrollbar-thumb {
-  background: var(--accent);
-}
+/* One project per row, height follows the content so no description is cut. */
+.card-grid { grid-template-columns: 1fr; }
 
 /* Links row (repo + optional paper DOI) */
 .project-links {
@@ -64,10 +42,4 @@
   background: var(--ink);
   border-color: var(--ink);
   box-shadow: var(--shadow);
-}
-
-@media (max-width: 520px) {
-  .card-grid { grid-template-columns: 1fr; }
-  .research-card { height: auto; }          /* let it breathe on phones */
-  .research-card .card-body { overflow: visible; }
 }
