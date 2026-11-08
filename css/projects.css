@@ -43,3 +43,29 @@
   border-color: var(--ink);
   box-shadow: var(--shadow);
 }
+
+/* Type labels (Overleaf-style rounded tags): research / tool / collab */
+.label {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 0 6px;
+  font-size: .62rem;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: .2px;
+  color: #fff;
+  border-radius: 4px;
+  vertical-align: 2px;
+  white-space: nowrap;
+}
+.label-research { background: #6f42c1; }  /* purple */
+.label-tool     { background: #1a8754; }  /* green  */
+.label-collab   { background: #b35900; }  /* orange */
+
+/* Author line under research titles; own name in bold */
+.card-authors {
+  margin-top: 4px;
+  font-size: .86rem;
+  color: var(--muted);
+}
+.card-authors strong { color: var(--ink); }
